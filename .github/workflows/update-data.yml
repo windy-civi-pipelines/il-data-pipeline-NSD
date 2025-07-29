@@ -43,7 +43,7 @@ jobs:
 
       - name: Scrape Data
         run: |
-          docker pull openstates/scrapers:28675b011eef5bb35a758d05d1b7313d515c28ea
+          docker pull openstates/scrapers:latest
           mkdir -p ${RUNNER_TEMP}/_working
           docker run \
               -v "${RUNNER_TEMP}/_working/_data":/opt/openstates/openstates/_data \
